@@ -39,7 +39,7 @@
     </div>
   </header>
 
-  <section class="container m-auto px-32 relative">
+  <section class="px-[40vh] container m-auto relative">
     <img class="max-w-4xl w-[100%] h-['600px'] m-auto" src="./images/banner.png" />
     <div class="absolute text-center w-full left-0 top-0 m-auto p-12 ">
       <h1 class="text-gray-50 font-serif text-6xl font-bold max-w-2xl text-center m-auto leading-normal"> We Provide
@@ -56,13 +56,13 @@
     </div>
   </section>
 
-  <section class=" text-center mt-20 px-32 flex flex-col gap-8">
+  <section class="px-[40vh] text-center mt-20 flex flex-col gap-8">
     <div class="text-3xl font-semibold">The Legal Practice Area</div>
     <p class=" w-7/12 mx-auto ">
       There are many variations of passages of Lorem Ipsum available, but the majority have
       suffered alteration in some form, by injected humour.
     </p>
-    <section class="grid grid-cols-3 px-40 mt-4 text-center">
+    <section class="grid grid-cols-3 px-20 mt-4 text-center">
       <div class=" flex flex-col gap-4 py-12 hover:border hover:bg-gray-50 duration:150 border-r border-b ">
         <img class=" m-auto h-12 object-contain" src="./images/business.png" alt="logo" />
         <h3 class="text-xl font-bold">Business Law</h3>
@@ -138,20 +138,21 @@
     </section>
   </section>
 
-  <section class="text-center mt-20 px-32 flex flex-col gap-8 ">
+  <section class="px-[40vh] h-fit text-center mt-20 flex flex-col gap-8 ">
     <h3 class="text-3xl font-semibold">What Our Client Say</h3>
     <p class=" w-7/12 mx-auto ">
       There are many variations of passages of Lorem Ipsum available, but the majority have
       suffered alteration in some form, by injected humour.
     </p>
+    <!-- class="relative bg-[url('./images/Rectangle7.png')] bg-no-repeat bg-center bg-opacity-90 overflow-hidden rounded-md"> -->
     <slider
-      class="relative bg-[url('./images/Rectangle7.png')] bg-no-repeat bg-center bg-opacity-90 h-72 overflow-hidden rounded-md">
-      <img class="absolute object-cover top-0 left-0" src="./images/banner.png" alt="banner" />
-      <div class="flex flex-col gap-2 p-8 text-gray-50">
-        <img class="m-auto " src="./images/Frame.png" alt="show more" />
+      class="relative rounded-md h-fit mb-6">
+      <img class=" object-cover top-0 left-0" src="./images/banner.png" alt="banner" />
+      <div class="absolute z-10 top-0 left-0 flex flex-col gap-2 p-8 text-gray-50">
+        <img class="m-auto h-fit mt-10" src="./images/Frame.png" alt="show more" />
         <h3 class=" font-semibold text-xl">Awlad Hossain</h3>
-        <h5 class="text-sm">UIX Designer</h5>
-        <p class="px-36 text-sm pt-4">
+        <h5 class="text-sm text-gray-50">UIX Designer</h5>
+        <p class="px-28 text-sm pt-4 text-gray-200">
           Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
           literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
           College in Virginia, looked up one of the more obscure Latin words, consectetur
@@ -160,87 +161,140 @@
     </slider>
   </section>
 
-  <section>
-    <h3>Frequently Asked Any Questions</h3>
-    <p>
+  <section class="px-[40vh] text-center mt-20">
+    <h3 class="text-3xl font-semibold">Frequently Asked Any Questions</h3>
+    <p class=" w-7/12 mx-auto mt-10 ">
       There are many variations of passages of Lorem Ipsum available, but the majority have
       suffered alteration in some form, by injected humour.
     </p>
-    <div>
-      <section>
-        <div>
-          <h3>
-            Are application fee waivers available?
-          </h3>
-          <p>
+    <div class="grid grid-cols-4 font-arial mt-10 text-left">
+      <section class="col-span-2 flex flex-col gap-2">
+        <div id="fAskedQues" class=" bg-gray-100 rounded-lg p-6">
+          <div class="flex justify-between">
+            <h3 class=" font-bold text-lg"> 1. Are application fee waivers available? </h3>
+            <h3 id="askedMinusButton1" onclick="clickFun(1)"
+              class="cursor-pointer  relative top-3.5 font-bold text-lg w-4 h-0.5 border-2 border-yellow-900"> </h3>
+            <h3 id="askedPlusButton1" onclick="clickFun(1)"
+              class="cursor-pointer  hidden font-bold text-2xl text-yellow-900 text-center"> + </h3>
+          </div>
+          <p id="askedPara1" class=" text-sm pt-4 text-yellow-900">
             There are many variations of passages of Lorem Ipsum
             available, but the majority have suffered alteration in some
             form, by injected humour.
           </p>
         </div>
-        <div>
-
+        <div id="fAskedQues" class=" bg-gray-100 rounded-lg p-6">
+          <div class="flex justify-between">
+            <h3 class=" font-bold text-lg"> 1. Are application fee waivers available? </h3>
+            <h3 id="askedMinusButton2" onclick="clickFun(2)"
+              class="cursor-pointer  hidden relative top-3.5 font-bold text-lg w-4 h-0.5 border-2 border-yellow-900">
+            </h3>
+            <h3 id="askedPlusButton2" onclick="clickFun(2)"
+              class="cursor-pointer font-bold text-2xl text-yellow-900 text-center"> + </h3>
+          </div>
+          <p id="askedPara2" class="hidden text-sm pt-4 text-yellow-900">
+            There are many variations of passages of Lorem Ipsum
+            available, but the majority have suffered alteration in some
+            form, by injected humour.
+          </p>
+        </div>
+        <div id="fAskedQues" class=" bg-gray-100 rounded-lg p-6">
+          <div class="flex justify-between">
+            <h3 class=" font-bold text-lg"> 1. Are application fee waivers available? </h3>
+            <h3 id="askedMinusButton3" onclick="clickFun(3)"
+              class="cursor-pointer  hidden relative top-3.5 font-bold text-lg w-4 h-0.5 border-2 border-yellow-900">
+            </h3>
+            <h3 id="askedPlusButton3" onclick="clickFun(3)"
+              class="cursor-pointer font-bold text-2xl text-yellow-900 text-center"> + </h3>
+          </div>
+          <p id="askedPara3" class="hidden text-sm pt-4 text-yellow-900">
+            There are many variations of passages of Lorem Ipsum
+            available, but the majority have suffered alteration in some
+            form, by injected humour.
+          </p>
+        </div>
+        <div id="fAskedQues" class=" bg-gray-100 rounded-lg p-6">
+          <div class="flex justify-between">
+            <h3 class=" font-bold text-lg"> 1. Are application fee waivers available? </h3>
+            <h3 id="askedMinusButton4" onclick="clickFun(4)"
+              class="hidden cursor-pointer text-4xl relative top-3.5 font-bold text-lg w-4 h-0.5 border-2 border-yellow-900">
+            </h3>
+            <h3 id="askedPlusButton4" onclick="clickFun(4)"
+              class="cursor-pointer font-bold text-2xl text-yellow-900 text-center">
+              + </h3>
+          </div>
+          <p id="askedPara4" class="hidden text-sm pt-4 text-yellow-900">
+            There are many variations of passages of Lorem Ipsum
+            available, but the majority have suffered alteration in some
+            form, by injected humour.
+          </p>
         </div>
       </section>
-      <img src="#" alt="question image" />
+      <img class="col-span-2" src="./images/faq.png" alt="question image" />
     </div>
   </section>
 
-  <section>
-    <h3>Frequently Asked Any Questions</h3>
-    <p>
+  <section class="px-[40vh] text-center mt-20 font-sans">
+    <h3 class="text-3xl font-semibold">Frequently Asked Any Questions</h3>
+    <p class=" w-7/12 mx-auto mt-10 ">
       There are many variations of passages of Lorem Ipsum available, but the majority have
       suffered alteration in some form, by injected humour.
     </p>
 
-    <div>
-      <section>
-        <div>
-          <img src="#" alt="question image" />
-          <h4>Adress</h4>
-          <p>
+    <div class="mt-10 grid grid-cols-4 gap-8">
+      <section class="col-span-2 grid grid-cols-2 bg-slate-50">
+        <div class="flex flex-col gap-4 p-10 border-r border-b">
+          <img class="w-6 mx-auto" src="./images/address.png" alt="question image" />
+          <h4 class="font-bold">Adress</h4>
+          <p class="text-sm text-yellow-900">
             A108 Adam Street,
             New York, NY 535022
           </p>
         </div>
-        <div>
-          <img src="#" alt="question image" />
-          <h4>Call Us</h4>
-          <p>
+        <div class="flex flex-col gap-4 p-10 border-b">
+          <img class="w-6 mx-auto" src="./images/call.png" alt="question image" />
+          <h4 class="font-bold">Call Us</h4>
+          <p class="text-sm text-yellow-900">
             +88 01750 00 00 00 <br>
             +88 01750 00 00 00
           </p>
         </div>
-        <div>
-          <img src="#" alt="question image" />
-          <h4>Email Us</h4>
-          <p>
+        <div class="flex flex-col gap-4 p-10 border-r">
+          <img class="w-6 mx-auto" src="./images/email.png" alt="question image" />
+          <h4 class="font-bold">Email Us</h4>
+          <p class="text-sm text-yellow-900">
             info@gmail.com <br>
             info@gmail.com
           </p>
         </div>
-        <div>
-          <img src="#" alt="question image" />
-          <h4>Working Hours</h4>
-          <p>
+        <div class="flex flex-col gap-4 p-10">
+          <img class="w-6 mx-auto" src="./images/time.png" alt="question image" />
+          <h4 class="font-bold">Working Hours</h4>
+          <p class="text-sm text-yellow-900">
             Mon-Fri: 9AM to 5PM <br>
             Sunday: 9AM to 1 PM
           </p>
         </div>
       </section>
 
-      <section>
-        <input type="text" placeholder="Your Name" />
-        <input type="text" placeholder="Your Email" />
-        <input type="text" placeholder="Subject" />
-        <input type="text" placeholder="Your Message" />
-        <button type="button"> Send Message</button>
+      <section class="col-span-2 flex flex-col justify-between w-['50vh']">
+        <input type="text" placeholder="Your Name"
+          class="w-full bg-gray-50 border border-yellow-500 text-gray-900 text-sm rounded-md focus:ring-yellow-300 focus:border-yellow-500 block p-3 " />
+        <input type="text" placeholder="Your Email"
+          class="w-full bg-gray-50 border border-yellow-500 text-gray-900 text-sm rounded-md focus:ring-yellow-300 focus:border-yellow-500 block p-3 " />
+        <input type="text" placeholder="Subject"
+          class="w-full bg-gray-50 border border-yellow-500 text-gray-900 text-sm rounded-md focus:ring-yellow-300 focus:border-yellow-500 block p-3 " />
+        <textarea cols="6" placeholder="Your Message" rows="6"
+          class="w-full bg-gray-50 border border-yellow-500 text-gray-900 text-sm rounded-md focus:ring-yellow-300 focus:border-yellow-500 block p-3 ">
+        </textarea>
+
+        <button class=" w-full button bg-yellow-600 text-yellow-50 py-3 px-8 rounded-md font-medium">Send
+          Message</button>
       </section>
     </div>
-
   </section>
 
-  <footer class="bg-black text-yellow-50 grid grid-cols-12 text-sm py-20">
+  <footer class=" mt-20 bg-black text-yellow-50 grid grid-cols-12 text-sm py-20">
     <section class=" col-start-3 col-span-2 flex flex-col gap-6 px-4 py-6">
       <img class="w-32 mb-6" src="./images/logo.png" alt="Placeholder" />
       <p class="pr-6">
@@ -296,6 +350,24 @@
         </section>
       </section>
   </footer>
+
+  <script type="text/javascript">
+    const fQues = document.querySelectorAll("#fAskedQues");
+    fQues.forEach(value=>{
+      console.log(value.children[0].children.length)
+    })
+    console.log({ fQues })
+    function clickFun(value, e) {
+      console.log({ e })
+      const p = document.querySelector("#askedPara" + value);
+      const plusHead = document.querySelector("#askedPlusButton" + value);
+      const minHead = document.querySelector("#askedMinusButton" + value);
+      minHead.classList.toggle("hidden");
+      plusHead.classList.toggle("hidden");
+      console.log({ p })
+      p.classList.toggle("hidden")
+    }
+  </script>
 </body>
 
 </html>
